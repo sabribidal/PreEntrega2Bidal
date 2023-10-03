@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cedarville+Cursive&display=swap');
+
+.NavBar{
+    background-color: white;
+}
+.pages{
+    flex-grow: inherit;
+    justify-content: center;
+}
+.branch{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+}

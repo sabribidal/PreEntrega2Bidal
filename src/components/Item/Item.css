@@ -1,0 +1,10 @@
+.CardItem{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.ItemImg{
+    width: auto;
+    height: 200px;
+}
