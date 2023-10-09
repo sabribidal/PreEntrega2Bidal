@@ -7,7 +7,11 @@
     flex-grow: inherit;
     justify-content: center;
 }
+a.Option{
+    margin: 20px;
+}
 .branch{
     font-family: 'Cedarville Cursive', cursive;
     font-size: 40px;
+    text-decoration: none;
 }

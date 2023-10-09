@@ -1,14 +1,15 @@
 const products = [
     {
         id: '1',
-        name: 'Iphone 12',
+        name: 'Te Verde',
         price: 1000,
-        category: 'celular',
-        img: ''/* 'https://www.macstation.com.ar/img/productos/2492-2317-1.jpg' */,
-        stock: 25,
-        description: 'Descripcion de Iphone 12'
+        category: 'green',
+        img: 'https://www.inti-tea.com/cdn/shop/products/DSC6272c_700x700.jpg?v=1686165523',
+        description: 'Descripcion de Te Verde'
     },
-    {id: '2', name: 'Samsung S21', price: 500, category: 'celular', img: '', stock: 3, description: 'Descripcion de Samsung S21'}
+    {id: '2', name: 'Te Verde', price: 500, category: 'green', img: 'https://www.inti-tea.com/cdn/shop/products/DSC6272c_700x700.jpg?v=1686165523', stock: 3, description: 'Descripcion de Te Verde'},
+    {id: '3', name: 'Te Negro', price: 500, category: 'black', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9AIVe_Nsa5lqymO1SDOQudSP-5qMmnbjdQCkpeDOioxJs3IqyEJuGqK9H-fQSr6vtEBI&usqp=CAU', stock: 3, description: 'Descripcion de Te Negro'},
+    {id: '4', name: 'Te de Cedron', price: 500, category: 'blue', img: 'https://www.inti-tea.com/cdn/shop/products/DSC0430_669x669.jpg?v=1660662839', stock: 3, description: 'Descripcion de Te de Cedron'}
 ]
 
 export const getProducts = () => {
@@ -27,10 +28,10 @@ export const getProductsById = (productId) => {
     })
 }
 
-export const getProductsByCategory = () => {
+export const getProductsByCategory = (productCat) => {
     return new Promise ((resolve) => {
         setTimeout(() => {
-            resolve(products.find(prod => prod.category))
-        }, 500)
+            resolve(products.filter(prod => prod.category === productCat))
+        }, 2000)
     })
 }
