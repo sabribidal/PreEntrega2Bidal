@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { CardWidget } from '../CardWidget/CardWidget';
 import './NavBar.css';
@@ -19,7 +18,7 @@ function NavBar() {
           <NavLink to={`/category/black`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>black</NavLink>
           <NavLink to={`/category/blue`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>blue</NavLink>
         </Navbar.Collapse>
-        <CardWidget />
+        <CardWidget/>
       </Container>
     </Navbar>
   );
